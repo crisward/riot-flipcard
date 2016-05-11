@@ -8,6 +8,10 @@ A small riot tag which flips the content in 3d using css transforms.
 npm install riot-flipcard
 ```
 
+## Demo
+
+https://crisward.github.io/riot-flipcard/
+
 ## Usage
 
 ```html
