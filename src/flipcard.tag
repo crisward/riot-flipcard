@@ -54,6 +54,7 @@ flipcard
     @on 'mount',->
       @root.style.width = "100px"  if !@root.style.width
       @root.style.height = "100px"  if !@root.style.height
+      @root.style.display = "block"
       @back45 = true if opts.direction?.match(/[xy]{2}/)
       @backflip = true if opts.direction == "y"
       [].slice.call(@root.querySelectorAll('.front,.back,.cardwrap')).forEach (elem)=>

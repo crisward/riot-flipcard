@@ -14,8 +14,10 @@ https://crisward.github.io/riot-flipcard/
 
 ## Usage
 
+You'll need too add `style="display:none"` to prevent the flash on content
+
 ```html
-<flipcard>
+<flipcard style="display:none">
   <div class="front">
     <p>Your Front Content</p>
     <button onclick="{toggle}">Flip</button>
