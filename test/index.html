@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Riot Flipcard</title>
+  <style>
+    html{
+      background:#eee;
+      font-family: sans-serif
+    }
+    h1,h2,h3,h4,h5{
+      padding:0px;
+      margin-top:0px
+    }
+  </style>
+</head>
+<body>
+
+
+<flipcard>
+  <div class="front" >
+    <h4>Spin Me!</h4>
+    <button onclick="{toggle}">Flip</button>
+  </div>
+  <div class="back">
+    <h4>I'm Dizzy</h4>
+    <button onclick="{toggle}">Back</button>
+  </div>
+</flipcard>
+
+<br>
+
+<flipcard direction="y" style="width:200px;height:200px;">
+  <div class="front">
+    <h2>Flip Vertical</h2>
+    <button onclick="{toggle}">Flip</button>
+  </div>
+  <div class="back" style="background:#a40">
+    <h2>I'm Flipped</h2>
+    
+    <button onclick="{toggle}">Back</button>
+  </div>
+</flipcard>
+
+<br>
+
+<flipcard direction="xy" style="width:300px;height:300px">
+  <div class="front">
+    <h1>Flip Diagonal</h1>
+    <button onclick="{toggle}">Flip</button>
+  </div>
+  <div class="back" style="background:#078;padding:0">
+    <img onclick="{toggle}" src="http://fillmurray.com/300/300" />
+  </div>
+</flipcard>
+
+
+
+<script src="../node_modules/riot/riot+compiler.min.js"></script>
+<script src="../lib/flipcard.js"></script>
+<script>
+  riot.mount('*')
+</script>
+
+</body>
+</html>
