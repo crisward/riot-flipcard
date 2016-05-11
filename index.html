@@ -11,50 +11,55 @@
       padding:0px;
       margin-top:0px
     }
+    .container{
+      width:1200px;
+      margin:0 auto;
+    }
   </style>
 </head>
 <body>
 
+<div class="container">
+  <h1>Riot Flipcard Demo</h1>
+  <flipcard>
+    <div class="front" >
+      <h4>Spin Me!</h4>
+      <button onclick="{toggle}">Flip</button>
+    </div>
+    <div class="back">
+      <h4>I'm Dizzy</h4>
+      <button onclick="{toggle}">Back</button>
+    </div>
+  </flipcard>
 
-<flipcard>
-  <div class="front" >
-    <h4>Spin Me!</h4>
-    <button onclick="{toggle}">Flip</button>
-  </div>
-  <div class="back">
-    <h4>I'm Dizzy</h4>
-    <button onclick="{toggle}">Back</button>
-  </div>
-</flipcard>
+  <br>
 
-<br>
+  <flipcard direction="y" style="width:200px;height:200px;">
+    <div class="front">
+      <h2>Flip Vertical</h2>
+      <button onclick="{toggle}">Flip</button>
+    </div>
+    <div class="back" style="background:#a40">
+      <h2>I'm Flipped</h2>
+      
+      <button onclick="{toggle}">Back</button>
+    </div>
+  </flipcard>
 
-<flipcard direction="y" style="width:200px;height:200px;">
-  <div class="front">
-    <h2>Flip Vertical</h2>
-    <button onclick="{toggle}">Flip</button>
-  </div>
-  <div class="back" style="background:#a40">
-    <h2>I'm Flipped</h2>
-    
-    <button onclick="{toggle}">Back</button>
-  </div>
-</flipcard>
+  <br>
 
-<br>
+  <flipcard direction="xy" style="width:300px;height:300px">
+    <div class="front">
+      <h1>Flip Diagonal</h1>
+      <button onclick="{toggle}">Flip</button>
+      <p><small>(Click anywhere on the picture to return)</small></p>
+    </div>
+    <div class="back" style="background:#078;padding:0">
+      <img onclick="{toggle}" src="http://fillmurray.com/300/300" />
+    </div>
+  </flipcard>
 
-<flipcard direction="xy" style="width:300px;height:300px">
-  <div class="front">
-    <h1>Flip Diagonal</h1>
-    <button onclick="{toggle}">Flip</button>
-    <p>(Click anywhere on the picture to return)</p>
-  </div>
-  <div class="back" style="background:#078;padding:0">
-    <img onclick="{toggle}" src="http://fillmurray.com/300/300" />
-  </div>
-</flipcard>
-
-
+</div>
 
 <script src="https://cdn.jsdelivr.net/riot/2.4/riot+compiler.min.js"></script>
 <script src="flipcard.js"></script>
