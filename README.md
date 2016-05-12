@@ -14,7 +14,8 @@ https://crisward.github.io/riot-flipcard/
 
 ## Usage
 
-You'll need too add `style="display:none"` to prevent the flash on content
+You'll need too add `style="display:none"` to prevent the flash on content load.
+You can also add `<style>flipcard{display:none}</style>` to the head of your document.
 
 ```html
 <flipcard style="display:none">
