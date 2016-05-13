@@ -1,4 +1,4 @@
-# Riot Flipcard
+<img src="https://cdn.rawgit.com/crisward/riot-flipcard/master/riot-flipcard.svg" height="140" />
 
 A small riot tag which flips the content in 3d using css transforms.
 

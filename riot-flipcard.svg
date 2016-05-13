@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 250 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g>
+        <g transform="matrix(2.01054,0,0,2.01054,128.162,40.9051)">
+            <text x="0px" y="0px" style="font-family:'HelveticaNeue-Medium';font-size:11.814px;fill:rgb(115,115,115);">riot</text>
+        </g>
+        <g transform="matrix(3.69176,0,0,3.69176,90.1417,68.8254)">
+            <g>
+                <text x="0px" y="0px" style="font-family:'HelveticaNeue-Medium';font-size:12px;fill:rgb(255,0,68);">flipcar<tspan x="34.248px " y="0px ">d</tspan></text>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(2.70691,0,0,2.70691,4.96276,7.08008)">
+        <g transform="matrix(0.363342,0,0,0.363342,0.0806189,-2.15001)">
+            <path d="M1.913,17.71L1.913,84.135C1.913,87.825 1.913,87.825 5.603,87.825L16.674,87.825L16.674,14.02L5.603,14.02C1.913,14.02 1.913,14.02 1.913,17.71Z" style="fill:rgb(77,77,77);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.363342,0,0,0.363342,-4.52482,-2.16065)">
+            <path d="M42.619,47.232L42.619,54.613C42.619,58.303 42.619,58.303 46.309,58.303L57.38,58.303L57.38,65.684L73.986,50.923L69.892,47.283L57.381,36.161L57.381,43.542L46.31,43.542C42.619,43.542 42.619,43.542 42.619,47.232Z" style="fill:rgb(255,0,68);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.363342,0,0,0.363342,-4.25988,-2.34657)">
+            <path d="M35.239,10.329L57.381,21.4L79.523,21.4L79.523,80.445L57.381,80.445L35.239,89.671L35.239,10.329L35.239,10.329ZM27.858,4.794L27.858,95.206C27.858,100.741 27.858,100.741 31.548,98.896L57.38,87.825L83.212,87.825C86.902,87.825 86.902,87.825 86.902,84.135L86.902,17.71C86.902,14.02 86.902,14.02 83.212,14.02L57.381,14.02L31.549,1.104C27.858,-0.742 27.858,-0.742 27.858,4.794Z" style="fill:rgb(255,0,68);fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>
