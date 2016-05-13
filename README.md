@@ -30,6 +30,28 @@ You can also add `<style>flipcard{display:none}</style>` to the head of your doc
 </flipcard>
 ````
 
+There are three methods you can call within the flipcard tag
+
+|Methos    | Description          |
+|-----     |------                |
+|toggle    | swaps front to back  |
+|front     | switches to front    |
+|back      | switches to back     |
+
+
+Front and back can be useful for hover effects ie.
+
+```html
+<flipcard>
+  <div class="front" onmouseover="{back}">
+    <p>Your Front Content</p>
+  </div>
+  <div class="back" onmouseover="{front}">
+    <p>Your Back Content</p>
+  </div>
+</flipcard>
+````
+
 ### Styling
 
 You can style flipcard any way you like. 
