@@ -66,3 +66,13 @@ flipcard
       @flipx = !@flipx if opts.direction!="y" || opts.direction?.match(/x/)
       @flipy = !@flipy if opts.direction?.match(/y/)
       @update()
+      
+    @front = =>
+      @flipx = false if opts.direction!="y" || opts.direction?.match(/x/)
+      @flipy = false if opts.direction?.match(/y/)
+      @update()
+    
+    @back = =>
+      @flipx = true if opts.direction!="y" || opts.direction?.match(/x/)
+      @flipy = true if opts.direction?.match(/y/)
+      @update()
