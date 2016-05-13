@@ -19,59 +19,87 @@
     flipcard{
       display:none;
     }
+    .col{
+      float:left;
+      padding:0 5px 0 0
+    }
+    
+    .row{
+      margin:5px 0;  
+    }
+    
+    button{
+      padding:10px 20px;
+      border:1px solid #FF0044;
+      background:white;
+      color:#FF0044; 
+      font-size:14px;
+    }
+    
+    .row:after{
+      display: table;
+      clear: both;
+      content: "";
+    }
   </style>
 </head>
 <body>
 
 <div class="container">
-  <h1>Riot Flipcard Demo</h1>
-  <flipcard>
-    <div class="front" >
-      <h4>Spin Me!</h4>
-      <button onclick="{toggle}">Flip</button>
-    </div>
-    <div class="back">
-      <h4>I'm Dizzy</h4>
-      <button onclick="{toggle}">Back</button>
-    </div>
-  </flipcard>
-
+  <img src="https://cdn.rawgit.com/crisward/riot-flipcard/master/riot-flipcard.svg" style="width:250px;display:block;margin:10px auto;" />
   <br>
+  <div class="row">
+    <div class="col" style="width:100px">
+    
+      <flipcard style="width:100px;height:200px">
+        <div class="front" >
+          <h4>Spin Me!</h4>
+          <button onclick="{toggle}">Flip</button>
+        </div>
+        <div class="back">
+          <h4>I'm Dizzy</h4>
+          <button onclick="{toggle}">Back</button>
+        </div>
+      </flipcard>
+    
+    </div>
+    <div class="col" style="width:200px">
+      <flipcard style="width:210px;height:200px">
+        <div class="front" onmouseover="{back}" onclick="{toggle}">
+          <h1>HOVER!!</h1>
+        </div>
+        <div class="back" style="background:#FF0044" onmouseleave="{front}" onclick="{toggle}">
+          <h2>Look at me Ma, I've turned over a new leaf.</h2>
+        </div>
+      </flipcard>
+    </div>
+  </div>
+  
+  <div class="row">
+    <flipcard direction="y" style="width:315px;height:15r0px;">
+      <div class="front" onclick="{toggle}">
+        <h2>Flip Vertical</h2>
+        <p>Click Anywhere</p>
+      </div>
+      <div class="back" style="background:#f80;" onclick="{toggle}">
+        <h2>I'm Flipped</h2>
+        <p>Click Anywhere to go back</p>
+      </div>
+    </flipcard>
+  </div>
 
-  <flipcard direction="y" style="width:200px;height:200px;">
-    <div class="front" onclick="{toggle}">
-      <h2>Flip Vertical</h2>
-      <p>Click Anywhere</p>
-    </div>
-    <div class="back" style="background:#078;" onclick="{toggle}">
-      <h2>I'm Flipped</h2>
-      <p>Click Anywhere to go back</p>
-    </div>
-  </flipcard>
-
-  <br>
-
-  <flipcard direction="xy" style="width:300px;height:300px">
-    <div class="front" onclick="{toggle}">
-      <h1>Flip Diagonal</h1>
-      <button>Flip</button>
-      <p><small>(Click anywhere on the picture to return)</small></p>
-    </div>
-    <div class="back" style="padding:0">
-      <img onclick="{toggle}" src="http://fillmurray.com/300/300" />
-    </div>
-  </flipcard>
-
-  <br>
-  <flipcard style="width:300px;height:300px">
-    <div class="front" onmouseover="{back}">
-      <h1>HOVER!!</h1>
-    </div>
-    <div class="back" style="background:#f80" onmouseleave="{front}">
-      <h1>Go Away...</h1>
-    </div>
-  </flipcard>
-
+  <div class="row">
+    <flipcard direction="xy" style="width:315px;height:315px">
+      <div class="front" onclick="{toggle}">
+        <h1>Flip Diagonal</h1>
+        <p><small>(Click anywhere)</small></p>
+      </div>
+      <div class="back" style="padding:0">
+        <img onclick="{toggle}" src="http://fillmurray.com/315/315" />
+      </div>
+    </flipcard>
+  </div>
+  
 </div>
 
 <script src="https://cdn.jsdelivr.net/riot/2.4/riot+compiler.min.js"></script>
