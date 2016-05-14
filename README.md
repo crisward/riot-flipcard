@@ -32,7 +32,7 @@ You can also add `<style>flipcard{display:none}</style>` to the head of your doc
 
 There are three methods you can call within the flipcard tag
 
-|Methos    | Description          |
+|Methods   | Description          |
 |-----     |------                |
 |toggle    | swaps front to back  |
 |front     | switches to front    |
