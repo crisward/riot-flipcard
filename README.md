@@ -46,7 +46,7 @@ Front and back can be useful for hover effects ie.
   <div class="front" onmouseover="{back}">
     <p>Your Front Content</p>
   </div>
-  <div class="back" onmouseover="{front}">
+  <div class="back" onmouseleave="{front}">
     <p>Your Back Content</p>
   </div>
 </flipcard>
